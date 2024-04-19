@@ -1,11 +1,18 @@
 import React from "react";
+import "./SubHead.css";
 
 export const SubHead = (prop) => {
   return (
-    <div className="md:w-[80%]  m-auto flex justify-center items-center  ">
-      <div className="w-full flex text-sm justify-between font-medium text-center text-gray-500 border-b border-gray-200">
-        <ul className="flex flex-wrap -mb-px">
-          <li className="me-2">
+    <div
+      id="sub-main"
+      className="w-[80%] m-auto flex justify-center items-center"
+    >
+      <div
+        id="sub-scroll"
+        className="w-full flex text-sm justify-between font-medium text-center text-gray-500 border-b border-gray-200"
+      >
+        <ul id="sub-ul" className="flex -mb-px">
+          <li className="me-2 w-max">
             <a
               href="#"
               className="inline-block p-4 text-black border-b-2 border-black rounded-t-lg active"
@@ -47,8 +54,9 @@ export const SubHead = (prop) => {
             </a>
           </li>
         </ul>
-        <div className="flex w-fit h-fit py-2  max-sm:hidden ">
+        <div className="flex w-fit h-fit py-2 max-sm:hidden">
           <button
+            id="sub-btn1"
             type="button"
             className="flex text-black bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 sm:px-2.5 max-sm:text-xs"
           >
@@ -71,6 +79,7 @@ export const SubHead = (prop) => {
           </button>
           {prop.islogin ? (
             <button
+              id="sub-btn2"
               type="button"
               className="flex text-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 lg:py-2.5 sm:py-1 me-2 mb-2 border-2 border-gray-500 sm:px-2.5"
             >
@@ -95,6 +104,7 @@ export const SubHead = (prop) => {
             </button>
           ) : (
             <button
+              id="sub-btn3"
               type="button"
               className="flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 md:px-2.5"
             >
@@ -115,10 +125,8 @@ export const SubHead = (prop) => {
               </svg>
               Join Group
             </button>
-
           )}
         </div>
-
       </div>
     </div>
   );

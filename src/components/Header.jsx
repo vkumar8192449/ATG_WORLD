@@ -1,17 +1,20 @@
 import React from "react";
 import whole from "../assets/whole.png";
 import photo from "../assets/profile4.png";
+import "./Header.css";
 
 export const Header = (prop) => {
   return (
     <>
-      <div className="h-16 w-full flex justify-between items-center border-2 px-20 ">
-
+      <div
+        id="header-main"
+        className="h-16 w-full flex justify-between items-center border-2 px-20 "
+      >
         <div className="flex justify-center items-center ">
-          <img src={whole} className="w-full " alt="" />
+          <img src={whole} id="logo-img" className="w-full " alt="" />
         </div>
 
-        <div className="max-sm:hidden">
+        <div className="max-sm:hidden" id="search-bar">
           <form className="max-w-md mx-auto ">
             <label
               htmlFor="default-search"
@@ -48,7 +51,7 @@ export const Header = (prop) => {
         </div>
 
         {prop.islogin ? (
-          <div className=" max-sm:hidden flex items-center cursor-pointer">
+          <div className=" flex items-center cursor-pointer">
             <img src={photo} className="w-8 h-8" alt="" />
             <p className="font-semibold px-2">Vinay kumar</p>
             <svg
@@ -69,7 +72,8 @@ export const Header = (prop) => {
           </div>
         ) : (
           <div
-            className=" max-sm:hidden font-semibold cursor-pointer"
+            id="create-acc"
+            className="font-semibold cursor-pointer"
             onClick={() => {
               prop.setlogin(1);
             }}
@@ -77,7 +81,6 @@ export const Header = (prop) => {
             Create account. <span className="text-sky-400">It's free!</span>
           </div>
         )}
-
       </div>
     </>
   );

@@ -1,0 +1,51 @@
+@media only screen and (max-width: 930px) {
+    #logo-img {
+        width: 100px;
+    }
+
+    #search-bar {
+        transform: scale(0.85);
+    }
+
+    #create-acc {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #search-bar {
+        transform: scale(0.75);
+    }
+
+    #create-acc {
+        font-size: .8rem;
+    }
+
+    #header-main {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #search-bar {
+        transform: scale(0.7);
+    }
+
+    #create-acc {
+        font-size: .78rem;
+    }
+
+    #header-main {
+        padding: 0 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #create-acc {
+        font-size: .75rem;
+    }
+
+    #header-main {
+        padding: 0 1rem;
+    }
+}

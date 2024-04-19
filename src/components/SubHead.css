@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1150px) {
+    #sub-btn1 {
+        transform: scale(.9);
+    }
+
+    #sub-btn2 {
+        transform: scale(.9);
+    }
+
+    #sub-btn3 {
+        transform: scale(.9);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #sub-btn1 {
+        transform: scale(.8);
+    }
+
+    #sub-btn2 {
+        transform: scale(.8);
+    }
+
+    #sub-btn3 {
+        transform: scale(.8);
+    }
+
+    #sub-main {
+        width: 100%;
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #sub-btn1 {
+        font-size: .85rem;
+    }
+
+    #sub-btn2 {
+        font-size: .85rem;
+    }
+
+    #sub-btn3 {
+        font-size: .85rem;
+    }
+
+}
+
+@media only screen and (max-width: 690px) {
+    #sub-btn2 {
+        display: none;
+    }
+
+    #sub-btn3 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+    #sub-ul {
+        transform: scale(.9);
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #sub-scroll {
+        overflow: scroll;
+    }
+}

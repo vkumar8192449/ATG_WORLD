@@ -1,0 +1,35 @@
+@media only screen and (max-width: 900px) {
+    #hero-txt {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hero-txt {
+        transform: scale(0.8);
+        left: 2%;
+        bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #hero-btn {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    #hero-txt {
+        transform: scale(1.2);
+        left: 10%;
+        bottom: 15%;
+    }
+
+    #hero-main {
+        overflow: hidden;
+    }
+
+    #hero-btn {
+        display: block;
+    }
+}
