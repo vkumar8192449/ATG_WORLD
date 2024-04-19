@@ -6,25 +6,26 @@ import profile1 from "../assets/profile1.png";
 import profile2 from "../assets/profile2.png";
 import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
+import "./ContentLeft.css";
 
 export const ContentLeft = () => {
   return (
-    <div className="min-w-[60%] max-sm:w-full ">
+    <div className="min-w-[60%] max-sm:w-[90%] m-auto">
       <div className="border-2 rounded-lg mb-4">
         <img src={post1} className="w-full" alt="" />
-        <div className="py-4 px-8">
+        <div className="py-4 px-8 temp">
           <p className="pb-2">✍️ Article</p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center cont-title">
             <p className="md:text-[1.35rem] font-semibold w-[60%] pb-1 sm:text-lg">
               What if famous brands had regular fonts? Meet RegulaBrands!
             </p>
             {/*  */}
           </div>
-          <p className="text-gray-600 text-[1.05rem] sm:text-xs">
+          <p className="text-gray-600 text-[1.05rem] sm:text-xs para">
             I've worked in UX for the better part of a decade. From now on, I
             plan to rei...
           </p>
-          <div className="flex justify-between pt-4 items-center">
+          <div className="flex justify-between pt-4 items-center cont-profile">
             <div className="flex items-center">
               <img src={profile1} alt="" />
               <p className="font-bold pl-4">Sarthak Kamra</p>
@@ -73,20 +74,20 @@ export const ContentLeft = () => {
 
       <div className="border-2 rounded-md mb-4">
         <img src={post2} className="w-full" alt="" />
-        <div className="py-4 px-8">
+        <div className="py-4 px-8 temp">
           <p className="pb-2">🔬 Education</p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center cont-title">
             <p className="md:text-[1.35rem] font-semibold w-[70%] pb-1 sm:text-lg">
               Tax Benefits for Investment under National Pension Scheme launched
               by Government
             </p>
             {/*  */}
           </div>
-          <p className="text-gray-600 text-[1.05rem] sm:text-xs">
+          <p className="text-gray-600 text-[1.05rem] sm:text-xs para">
             I've worked in UX for the better part of a decade. From now on, I
             plan to rei...
           </p>
-          <div className="flex justify-between pt-4 items-center">
+          <div className="flex justify-between pt-4 items-center cont-profile">
             <div className="flex items-center">
               <img src={profile2} alt="" />
               <p className="font-bold pl-4">Sarah West</p>
@@ -135,9 +136,9 @@ export const ContentLeft = () => {
 
       <div className="border-2 rounded-md mb-4">
         <img src={post3} className="w-full" alt="" />
-        <div className="py-4 px-8">
+        <div className="py-4 px-8 temp">
           <p className="pb-2">📅 Meetup</p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center cont-title">
             <p className="md:text-[1.35rem] font-semibold w-[70%] pb-1 sm:text-lg">
               Finance & Investment Elite Social Mixer @Lujiazui
             </p>
@@ -186,7 +187,7 @@ export const ContentLeft = () => {
           <button className="text-red-400 font-semibold w-full border-2 p-2 rounded-lg">
             Visit Website
           </button>
-          <div className="flex justify-between pt-4 items-center">
+          <div className="flex justify-between pt-4 items-center cont-profile">
             <div className="flex items-center">
               <img src={profile3} alt="" />
               <p className="font-bold pl-4">Ronal Jones</p>
@@ -234,9 +235,9 @@ export const ContentLeft = () => {
       </div>
 
       <div className="border-2 rounded-md mb-4">
-        <div className="py-4 px-8">
+        <div className="py-4 px-8 temp">
           <p className="pb-2">💼 Job</p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center cont-title">
             <p className="text-[1.35rem] font-semibold w-[70%] pb-1">
               Software Developer
             </p>
@@ -285,7 +286,7 @@ export const ContentLeft = () => {
           <button className="text-green-500 font-semibold w-full border-2 p-2 rounded-lg">
             Apply on Timesjobs
           </button>
-          <div className="flex justify-between pt-4 items-center">
+          <div className="flex justify-between pt-4 items-center cont-profile">
             <div className="flex items-center">
               <img src={profile4} alt="" />
               <p className="font-bold pl-4">Joseph Gray</p>
@@ -331,7 +332,6 @@ export const ContentLeft = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

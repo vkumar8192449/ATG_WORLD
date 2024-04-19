@@ -1230,6 +1230,12 @@ video {
   --tw-ring-color: rgb(243 244 246 / var(--tw-ring-opacity));
 }
 
+@media not all and (min-width: 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
+}
+
 @media not all and (min-width: 640px) {
   .max-sm\:left-\[4\%\] {
     left: 4%;
@@ -1239,8 +1245,24 @@ video {
     display: none;
   }
 
+  .max-sm\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .max-sm\:w-full {
     width: 100%;
+  }
+
+  .max-sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .max-sm\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .max-sm\:w-\[90\%\] {
+    width: 90%;
   }
 
   .max-sm\:text-xl {

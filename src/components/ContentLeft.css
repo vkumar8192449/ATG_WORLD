@@ -1,0 +1,81 @@
+.cont-title p {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cont-title p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cont-profile div {
+        transform: scale(.85);
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .cont-title p {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .cont-profile div {
+        transform: scale(.75);
+    }
+
+    .temp {
+        padding: 1rem 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .temp {
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .cont-title p {
+        font-size: 1rem;
+    }
+
+    .temp {
+        padding: 1rem 1.7rem;
+    }
+
+    .para {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .temp {
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .cont-profile {
+        width: 110%;
+        position: relative;
+        left: -5%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .cont-profile {
+        transform: scale(.95);
+        width: 120%;
+        left: -10%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .cont-profile {
+        transform: scale(.95);
+        width: 124%;
+        left: -12%;
+    }
+}
