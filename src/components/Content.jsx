@@ -4,7 +4,7 @@ import { ContentRight } from "./ContentRight.jsx";
 
 export const Content = (prop) => {
   return (
-    <div className="w-[80%] m-auto flex justify-between">
+    <div className="w-[80%] mx-auto  flex justify-between max-sm:w-full    ">
       <ContentLeft />
       <ContentRight islogin={prop.islogin} />
     </div>

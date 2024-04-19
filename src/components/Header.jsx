@@ -5,10 +5,12 @@ import photo from "../assets/profile4.png";
 export const Header = (prop) => {
   return (
     <>
-      <div className="h-16 w-full flex justify-between items-center border-2 px-20">
-        <div className="flex justify-center">
-          <img src={whole} className="max-sm:w-[80%]" alt="" />
+      <div className="h-16 w-full flex justify-between items-center border-2 px-20 ">
+
+        <div className="flex justify-center items-center ">
+          <img src={whole} className="w-full " alt="" />
         </div>
+
         <div className="max-sm:hidden">
           <form className="max-w-md mx-auto ">
             <label
@@ -44,6 +46,7 @@ export const Header = (prop) => {
             </div>
           </form>
         </div>
+
         {prop.islogin ? (
           <div className=" max-sm:hidden flex items-center cursor-pointer">
             <img src={photo} className="w-8 h-8" alt="" />
@@ -74,6 +77,7 @@ export const Header = (prop) => {
             Create account. <span className="text-sky-400">It's free!</span>
           </div>
         )}
+
       </div>
     </>
   );
