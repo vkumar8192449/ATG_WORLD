@@ -6,11 +6,11 @@ export const Header = (prop) => {
   return (
     <>
       <div className="h-16 w-full flex justify-between items-center border-2 px-20">
-        <div className="">
-          <img src={whole} alt="" />
+        <div className="flex justify-center">
+          <img src={whole} className="max-sm:w-[80%]" alt="" />
         </div>
-        <div className="">
-          <form className="max-w-md mx-auto">
+        <div className="max-sm:hidden">
+          <form className="max-w-md mx-auto ">
             <label
               htmlFor="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only"
@@ -45,7 +45,7 @@ export const Header = (prop) => {
           </form>
         </div>
         {prop.islogin ? (
-          <div className="flex items-center cursor-pointer">
+          <div className=" max-sm:hidden flex items-center cursor-pointer">
             <img src={photo} className="w-8 h-8" alt="" />
             <p className="font-semibold px-2">Vinay kumar</p>
             <svg
@@ -66,7 +66,7 @@ export const Header = (prop) => {
           </div>
         ) : (
           <div
-            className="font-semibold cursor-pointer"
+            className=" max-sm:hidden font-semibold cursor-pointer"
             onClick={() => {
               prop.setlogin(1);
             }}

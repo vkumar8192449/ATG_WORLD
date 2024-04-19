@@ -50,7 +50,7 @@ export const SubHead = (prop) => {
         <div className="flex py-2">
           <button
             type="button"
-            className="flex text-black bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2"
+            className="flex text-black bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 md:px-2.5"
           >
             Write a Post{" "}
             <svg
@@ -72,7 +72,7 @@ export const SubHead = (prop) => {
           {prop.islogin ? (
             <button
               type="button"
-              className="flex text-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 border-2 border-gray-500"
+              className="flex text-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 lg:py-2.5 md:py-1 me-2 mb-2 border-2 border-gray-500 md:px-2.5"
             >
               <svg
                 className="w-6 h-6 text-gray-800"
@@ -96,7 +96,7 @@ export const SubHead = (prop) => {
           ) : (
             <button
               type="button"
-              className="flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2"
+              className="flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 md:px-2.5"
             >
               <svg
                 className="w-6 h-6 text-gray-800 fill-white"
