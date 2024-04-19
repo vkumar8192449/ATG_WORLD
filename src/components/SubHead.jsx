@@ -2,7 +2,7 @@ import React from "react";
 
 export const SubHead = (prop) => {
   return (
-    <div className="w-[80%] m-auto">
+    <div className="md:w-[80%]  m-auto flex justify-center items-center  ">
       <div className="w-full flex text-sm justify-between font-medium text-center text-gray-500 border-b border-gray-200">
         <ul className="flex flex-wrap -mb-px">
           <li className="me-2">
@@ -47,10 +47,10 @@ export const SubHead = (prop) => {
             </a>
           </li>
         </ul>
-        <div className="flex py-2">
+        <div className="flex w-fit h-fit py-2  max-sm:hidden ">
           <button
             type="button"
-            className="flex text-black bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 md:px-2.5"
+            className="flex text-black bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 py-2.5 me-2 mb-2 sm:px-2.5 max-sm:text-xs"
           >
             Write a Post{" "}
             <svg
@@ -72,7 +72,7 @@ export const SubHead = (prop) => {
           {prop.islogin ? (
             <button
               type="button"
-              className="flex text-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 lg:py-2.5 md:py-1 me-2 mb-2 border-2 border-gray-500 md:px-2.5"
+              className="flex text-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm lg:px-5 lg:py-2.5 sm:py-1 me-2 mb-2 border-2 border-gray-500 sm:px-2.5"
             >
               <svg
                 className="w-6 h-6 text-gray-800"
@@ -115,8 +115,10 @@ export const SubHead = (prop) => {
               </svg>
               Join Group
             </button>
+
           )}
         </div>
+
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { RecommenGroup } from "./RecommenGroup.jsx";
 
 export const ContentRight = (prop) => {
   return (
-    <div className="w-[30%] py-8">
+    <div className="min-w-[250px] max-w-[350px] max-sm:hidden">
       <form className="flex items-center max-w-lg mx-8">
         <label htmlFor="voice-search" className="sr-only">
           Search

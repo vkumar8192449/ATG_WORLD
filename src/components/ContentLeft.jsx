@@ -9,18 +9,18 @@ import profile4 from "../assets/profile4.png";
 
 export const ContentLeft = () => {
   return (
-    <div className="w-[65%]">
+    <div className="min-w-[60%] max-sm:w-full ">
       <div className="border-2 rounded-lg mb-4">
         <img src={post1} className="w-full" alt="" />
         <div className="py-4 px-8">
           <p className="pb-2">✍️ Article</p>
           <div className="flex justify-between items-center">
-            <p className="text-[1.35rem] font-semibold w-[60%] pb-1">
+            <p className="md:text-[1.35rem] font-semibold w-[60%] pb-1 sm:text-lg">
               What if famous brands had regular fonts? Meet RegulaBrands!
             </p>
             {/*  */}
           </div>
-          <p className="text-gray-600 text-[1.05rem]">
+          <p className="text-gray-600 text-[1.05rem] sm:text-xs">
             I've worked in UX for the better part of a decade. From now on, I
             plan to rei...
           </p>
@@ -76,13 +76,13 @@ export const ContentLeft = () => {
         <div className="py-4 px-8">
           <p className="pb-2">🔬 Education</p>
           <div className="flex justify-between items-center">
-            <p className="text-[1.35rem] font-semibold w-[70%] pb-1">
+            <p className="md:text-[1.35rem] font-semibold w-[70%] pb-1 sm:text-lg">
               Tax Benefits for Investment under National Pension Scheme launched
               by Government
             </p>
             {/*  */}
           </div>
-          <p className="text-gray-600 text-[1.05rem]">
+          <p className="text-gray-600 text-[1.05rem] sm:text-xs">
             I've worked in UX for the better part of a decade. From now on, I
             plan to rei...
           </p>
@@ -138,7 +138,7 @@ export const ContentLeft = () => {
         <div className="py-4 px-8">
           <p className="pb-2">📅 Meetup</p>
           <div className="flex justify-between items-center">
-            <p className="text-[1.35rem] font-semibold w-[70%] pb-1">
+            <p className="md:text-[1.35rem] font-semibold w-[70%] pb-1 sm:text-lg">
               Finance & Investment Elite Social Mixer @Lujiazui
             </p>
             {/*  */}
@@ -331,6 +331,7 @@ export const ContentLeft = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
